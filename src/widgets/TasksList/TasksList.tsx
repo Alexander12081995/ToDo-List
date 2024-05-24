@@ -25,7 +25,7 @@ export const TasksList = () => {
     if (activeCard === undefined || activeCard === null) return;
 
     const taskToMove = tasks[activeCard];
-    const updateTasks = tasks.filter((task, index) => index !== activeCard);
+    const updateTasks = tasks.filter((_, index) => index !== activeCard);
 
     updateTasks.splice(positions, 0, taskToMove);
 

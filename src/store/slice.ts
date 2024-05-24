@@ -1,8 +1,8 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { PropsTask } from "../shared/types/types";
+import { Task } from "../shared/types/types";
 
 interface State {
-  tasks: PropsTask[];
+  tasks: Task[];
 }
 
 const initialState: State = {
@@ -14,11 +14,11 @@ const todoSlice = createSlice({
   name: "todos",
   initialState,
   reducers: {
-    setTasks: (state, actions: PayloadAction<PropsTask[]>) => {
+    setTasks: (state, actions: PayloadAction<Task[]>) => {
       state.tasks = actions.payload;
     },
     //Добавление задачи
-    addTask: (state, actions: PayloadAction<PropsTask>) => {
+    addTask: (state, actions: PayloadAction<Task>) => {
       state.tasks.push(actions.payload);
     },
 

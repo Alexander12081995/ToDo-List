@@ -1,6 +1,6 @@
 import { KeyboardEvent } from "react";
 import { useAppDispatch } from "../../shared/hooks/hooks";
-import { PropsTask } from "../../shared/types/types";
+import { Task } from "../../shared/types/types";
 import { addTask } from "../../store/slice";
 
 interface PropsUseAddTask {
@@ -16,7 +16,7 @@ export const useAddTask = ({ setIsError, setValue }: PropsUseAddTask) => {
   const handleClickAddTask = (value: string) => {
     //Получения текущего времени, для использования в качестве task_id
     const currentDate = new Date();
-    const newTask: PropsTask = { task_id: currentDate.toISOString(), checked: false, value: value };
+    const newTask: Task = { task_id: currentDate.toISOString(), checked: false, value: value };
 
     //Проверка, если поле ввода имени задачи не пустое, то добавить задачу в store, если пустое, то установить ошибку
     if (value.trim()) {

@@ -1,7 +1,28 @@
 :root {
   font-family: "Raleway", sans-serif;
+  background-color: rgb(247, 254, 252);
+
+  --colorText: #000000e0;
+  --colorBorder: #00000026;
+  --colorBgContainer: #ffffff;
+  --colorPrimaryBase: #8f42ff;
+  --colorPrimaryHover: #9d64ea;
+  --colorPrimaryActive: #6636b5;
+  --colorTextDisabled: #00000040;
+  --colorBgContainerDisabled: #0000000a;
+  --colorTextLightSolid: #ffffff;
+  --colorError: rgb(205, 74, 74);
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+button,
+input {
+  font-family: inherit;
 }

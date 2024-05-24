@@ -1,0 +1,84 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  height: 32px;
+  padding-inline: 16px;
+  border-radius: 6px;
+  border: 1px solid var(--colorBorder);
+  background: var(--colorBgContainer);
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.02);
+  color: var(--colorText);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.buttonLarge {
+  font-size: 16px;
+  height: 40px;
+}
+.buttonSmall {
+  padding-inline: 8px;
+  height: 24px;
+}
+.button:hover {
+  color: var(--colorPrimaryHover);
+  transition: 0.2s;
+}
+.button:active {
+  color: var(--colorPrimaryActive);
+  border: 1px solid var(--colorPrimaryActive);
+  background: var(--colorBgContainer);
+}
+.buttonDisabled {
+  color: var(--colorTextDisabled);
+  border: 1px solid var(--colorBorder);
+  background: var(--colorBgContainerDisabled);
+  cursor: auto;
+}
+.buttonDisabled:hover {
+  color: var(--colorTextDisabled);
+  border: 1px solid var(--colorBorder);
+  background: var(--colorBgContainerDisabled);
+}
+.buttonDisabled:active {
+  color: var(--colorTextDisabled);
+  border: 1px solid var(--colorBorder);
+  background: var(--colorBgContainerDisabled);
+}
+
+/*!PRIMARY*/
+.buttonPrimary {
+  color: var(--colorTextLightSolid);
+  border: 1px solid var(--colorPrimaryBase);
+  background: var(--colorPrimaryBase);
+}
+.buttonPrimary:hover {
+  color: var(--colorTextLightSolid);
+  border: 1px solid var(--colorPrimaryHover);
+  background: var(--colorPrimaryHover);
+}
+.buttonPrimary:active {
+  color: var(--colorTextLightSolid);
+  border: 1px solid var(--colorPrimaryActive);
+  background: var(--colorPrimaryActive);
+}
+.buttonPrimaryDisabled {
+  color: var(--colorTextDisabled);
+  border: 1px solid var(--colorBorder);
+  background: var(--colorBgContainerDisabled);
+  cursor: auto;
+}
+.buttonPrimaryDisabled:hover {
+  color: var(--colorTextDisabled);
+  border: 1px solid var(--colorBorder);
+  background: var(--colorBgContainerDisabled);
+}
+.buttonPrimaryDisabled:active {
+  color: var(--colorTextDisabled);
+  border: 1px solid var(--colorBorder);
+  background: var(--colorBgContainerDisabled);
+}

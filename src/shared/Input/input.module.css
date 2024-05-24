@@ -1,0 +1,38 @@
+.blockInput {
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding-inline: 12px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid var(--colorBorder);
+  font-size: 16px;
+}
+.input:hover {
+  border: 1px solid var(--colorPrimaryHover);
+}
+.input:focus {
+  outline: none;
+  border: 1px solid var(--colorPrimaryActive);
+}
+.inputError {
+  border: 1px solid var(--colorError);
+}
+.inputError:focus {
+  border: 1px solid var(--colorError);
+}
+.inputError:hover {
+  border: 1px solid var(--colorError);
+}
+
+.errorText {
+  position: absolute;
+  color: var(--colorError);
+  bottom: -24px;
+  left: 0;
+}
